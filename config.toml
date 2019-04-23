@@ -1,4 +1,98 @@
 baseURL = "http://shreelaxmisharada.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "hugo-material-blog"
+
+title = "Shree Laxmi-Sharada Vidya Prabodhini"
+
+theme = "den"
+
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+# Copyright, appears in the footer
+copyright = "© 2016 Copyright Text"
+showMenuLanguages = true
+
+[params]
+  since = "2017"             # Site creation time
+  rssFullContent = true      # set true to use full content instead of summary
+
+  # site info (optional)
+  keywords = ["Hugo", "theme","den"]
+  description = "A simple theme for Hugo"
+  logoTitle = "Den" # shown on top-left, default: title
+  siteLogoImage = "images/globe.svg"     # shown besides logoTitle
+  # headerTitle = "Den"                   # default: title
+  headerImage = "images/background.jpg"
+  showAuthorCard = true # Whether to show author information below the article
+
+  showMenuLanguages = true
+
+  autoLoadComments = false # auto load comment when scrolling down
+
+  # paginate style, default use numbered pagination links
+  # if true, use original "Previous" and "Next" links.
+  # paginateOriginalStyle = true
+
+  # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+  dateFormatToUse = "2006-01-02"
+
+  google_verification = ""  # Google_Verification
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = []             # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = []              # if ['custom.js'], load '/static/js/custom.js' file
+
+
+
+# English
+[languages.en]
+  languageCode = "en"
+  languageName = "English"
+  contentDir = "content/en"
+  weight = 1
+
+  [languages.en.params]
+    description = "Read in english"
+
+  # Main menu
+  [[languages.en.menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 10
+
+  [[languages.en.menu.avahan]]
+    url = "/en/avahan"
+    name = "Sponsorships"
+    weight = 30
+
+  [[languages.en.menu.about]]
+    url = "/about"
+    name = "About"
+    weight = 20
+
+# Marathi
+[languages.mr]
+  languageCode = "mr"
+  languageName = "मराठी"
+  contentDir = "content/mr"
+  weight = 2
+
+  [languages.mr.params]
+    description = "Marathit wacha"
+
+  # Main menu
+  [[languages.mr.menu.main]]
+    url = "/mr/"
+    name = "स्वागत"
+    weight = 10
+
+  [[languages.mr.menu.avahan]]
+    url = "/mr/avahan"
+    name = "आवाहन"
+    weight = 30
+
+  [[languages.en.menu.about]]
+    url = "/mr/about"
+    name = "About"
+    weight = 20
